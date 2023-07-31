@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import ClassificationSidebar from "../components/ClassificationSidebar";
-import ClassificationProjectClassifyComponent from "../components/ClassificationProjectClassifyComponent";
+import ClassificationProjectDataFilesComponent from "../components/ClassificationProjectDataFilesComponent";
 
-export function ClassificationProjectClassify() {
+export function ClassificationProjectDataFiles() {
 
   const { projectId } = useParams();
 
@@ -12,7 +12,7 @@ export function ClassificationProjectClassify() {
         <div className="col-2 border-end border-dark">
           <ClassificationSidebar projectId={projectId} />
         </div>
-        <ClassificationProjectClassifyComponent />
+        <ClassificationProjectDataFilesComponent />
       </div>
     </div>
   );

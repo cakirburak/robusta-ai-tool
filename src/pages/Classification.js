@@ -46,7 +46,7 @@ export function Classification(props) {
   }, [classificationProjects]);
 
   return (
-    <div className="container-lg mt-5 w-75 border border-3 border-dark" style={{ height: '685px' }}>
+    <div className="container-lg mt-5 border border-3 border-dark" style={{ height: '685px', width: '1080px', maxWidth:'1080px'}}>
       <div className="row align-items-start mb-5 border-bottom border-3 border-dark">
         <Link to="/" type="button" className="btn btn-secondary btn-lg col rounded-0 fs-5">Classification</Link>
         <Link to="/annotation" type="button" className="btn btn-light btn-lg col rounded-0 fs-5">Annotation</Link>

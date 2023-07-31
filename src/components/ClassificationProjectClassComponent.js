@@ -10,7 +10,6 @@ const ClassificationProjectClassComponent = () => {
   const [color, setColor] = useState("#aabbcc");
   const [isRGBSelectorVisible, setIsRGBSelectorVisible] = useState(false);
   const [projectClassArray, setProjectClassArray] = useState([]);
-  const [projectClassElementArray, setProjectClassElementArray] = useState([]);
 
   const handleTextChange = (event) => {
     setText(event.target.value);
@@ -32,7 +31,6 @@ const ClassificationProjectClassComponent = () => {
       "text": text,
       "color": color,
     }
-    const classElement = '<>'
     setProjectClassArray([...projectClassArray, classInstance]);
   }
 

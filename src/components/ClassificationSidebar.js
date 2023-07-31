@@ -11,8 +11,8 @@ const ClassificationSidebar = (props) => {
     <div className="sidebar">
       <Nav className="flex-column overflow-hidden">
         <div className="d-flex p-2 mb-2 border-bottom border-3 overflow-hidden">
-          <Link to="/classification" role="button" className="h-25 my-auto me-3"><FontAwesomeIcon icon={faArrowLeft} size="xl" /></Link>
-          <h3 className="m-0 px-0 fs-3 text-start w-100 text-nowrap">{projectId}</h3>
+          <Link to="/classification" role="button" className="h-25 my-auto me-2"><FontAwesomeIcon icon={faArrowLeft} size="xl" /></Link>
+          <h3 className="m-0 px-0 fs-5 text-start w-100 text-nowrap">{projectId}</h3>
         </div>
         <Nav.Item className="active">
           <Link to={`/classification/${projectId}/classify`} type="button" className="btn btn-secondary w-100 text-start my-1 fs-5 rounded-0">Classify</Link>
